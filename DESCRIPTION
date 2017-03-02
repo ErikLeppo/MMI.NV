@@ -1,4 +1,4 @@
-Package: MMI.NV
+Package: MMI_NV
 Title: Nevada MMI, Calculate Predicted Metrics
 Version: 0.0.0.9001
 Author: c(person("Erik", "Leppo", email="Erik.Leppo@tetratech.com",role=c("aut","cre")),
