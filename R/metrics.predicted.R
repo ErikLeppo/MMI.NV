@@ -25,7 +25,7 @@
 #'path <- getwd()
 #' setwd(path)
 #' 
-#' library("MMI.NV")
+#' library("MMIcalcNV")
 #' 
 #' # Load Station Predictors
 #' prednew=read.csv("predictors.20170215.csv")

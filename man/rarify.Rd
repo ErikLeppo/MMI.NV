@@ -37,7 +37,7 @@ Erik.Leppo@tetratech.com (2016)
 path <- getwd()
 setwd(path)
 
-library("MMI.NV")
+library("MMIcalcNV")
 
 # read in test data
 bugnew.raw <- read.csv(file="bugsamples.csv")
