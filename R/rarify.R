@@ -27,12 +27,14 @@
 #' library("MMIcalcNV")
 #' 
 #' # read in test data
-#'bugnew.raw <- read.csv(file="bugsamples.csv")
+#'#bugnew.raw <- read.csv(file="bugsamples.csv")
+#'bugnew.raw <- NV.bugs
+#'head(bugnew.raw)
 #'#aggregate samples by bug code and sample
-#'bugnew.raw <- bugnew.raw[,c("SampleId","Count","code")]
-#'bugnew.raw.ag <- aggregate(Count~code+SampleId,data=bugnew.raw,sum)
+#'bugnew.raw <- bugnew.raw[,c("Samp_Rep","Individuals","TaxaID_Stage")]
+#'bugnew.raw.ag <- aggregate(Individuals~TaxaID_Stage+Samp_Rep,data=bugnew.raw,sum)
 #'#resample to 300 counts
-#'bugnew.300cnt <- rarify(inbug=bugnew.raw.ag, sample.ID="SampleId", abund="Count", subsiz=300)
+#'bugnew.300cnt <- rarify(inbug=bugnew.raw.ag, sample.ID="Samp_Rep", abund="Individuals", subsiz=300)
 #'# remove taxa with a count of zero
 #'bugnew.300cnt <- bugnew.300cnt[bugnew.300cnt$Count>0,]
 #' @export

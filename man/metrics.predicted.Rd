@@ -17,7 +17,8 @@ This function allows you to generate predicted metric scores based on data frame
 Generate predicted metric scores based on site location predictors in O/E (RandomForest) model.  Output is table (stations by metrics).
 }
 \details{
-input data frame:  
+input data frame: 
+head(NV.predictors)  
 [1] "Sitecode"   "ELVmax_WS"  "PrdCond"    "SQ_KM"      "Tmax_WS"    "Pmin_WS"  
 [7] "WDmax_WS"   "BFI_WS"     "HYDR_WS"    "Pmax_PT"    "ELVmin_WS"  "Tmax_PT"   
 [13] "ELVcv_PT"   "ELVmean_WS" "Pmax_WS"    "Slope_WS"
@@ -30,11 +31,13 @@ setwd(path)
 library("MMIcalcNV")
 
 # Load Station Predictors
-prednew=read.csv("predictors.20170215.csv")
+#prednew <- read.csv("predictors.20170215.csv")
+prednew <- NV.predictors
+head(prednew)
 # Run function to get predicted metrics
 new.metrics.pred <- metrics.predicted(prednew)
 # Save the file
-write.csv(new.metrics.pred,"metrics_predicted.csv",row.names=FALSE)
+#write.csv(new.metrics.pred,"metrics_predicted.csv",row.names=FALSE)
 }
 \keyword{MMI,}
 \keyword{NV,}
