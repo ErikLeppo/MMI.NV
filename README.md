@@ -1,4 +1,4 @@
-# MMI_NV
+# MMI.NV
 Generate predicted metrics for Nevada MMI (USU 2012).
 
 Installation
