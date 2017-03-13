@@ -22,3 +22,6 @@ input data frame:
 
 rarify() allows the user to generate a subsample at a fixed count.  Original R code by John Van Sickle (USEPA, Corvallis) version 1.0 2005-06-10.  Modified with a set "seed" so can reproduce results.
 
+
+adfafasf
+
